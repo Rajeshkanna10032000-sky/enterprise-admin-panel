@@ -1,0 +1,69 @@
+.profile-menu {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+html.dark .profile-menu {
+  background: var(--dark-surface);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.profile-menu-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.profile-menu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-menu-info .profile-menu-name {
+  font-weight: 600;
+  margin: 0;
+  color: var(--gray-900);
+}
+
+html.dark .profile-menu-info .profile-menu-name {
+  color: var(--dark-text);
+}
+
+.profile-menu-info .profile-menu-role {
+  font-size: 12px;
+  color: #6b7280; /* gray-500 */
+  margin: 0;
+}
+
+html.dark .profile-menu-info .profile-menu-role {
+  color: var(--dark-text-secondary);
+}
+
+.profile-menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+
+.profile-menu-item:hover {
+  background: #f3f4f6; /* gray-100 */
+}
+
+html.dark .profile-menu-item:hover {
+  background: var(--dark-surface-light);
+}
+
+.profile-menu-item.logout {
+  color: #ef4444;
+  font-weight: 600;
+}

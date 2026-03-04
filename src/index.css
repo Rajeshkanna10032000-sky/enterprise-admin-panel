@@ -1,0 +1,30 @@
+/* index.css */
+
+/* ========================================
+   TAILWIND BASE, COMPONENTS, UTILITIES
+   ======================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   CUSTOM ADMIN DASHBOARD CSS
+   ======================================== */
+
+/* 1️⃣ Core Variables */
+@import "./styles/base/variables.css";
+
+/* 2️⃣ Global styles (reset, body, html) */
+@import "./styles/base/global.css";
+
+/* 3️⃣ Utility classes (rounded, shadow, text-primary, bg-primary, etc.) */
+@import "./styles/base/utilities.css";
+
+@import "./styles/base/responsive.css";
+
+@import "./styles/layout/layout.css";
+
+/* 4️⃣ Component-specific styles */
+@import "./styles/components/header.css";
+@import "./styles/components/sidebar.css";
+@import "./styles/components/footer.css";

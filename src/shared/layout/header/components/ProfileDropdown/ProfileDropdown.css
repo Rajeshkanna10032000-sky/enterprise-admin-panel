@@ -1,0 +1,33 @@
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 64px;
+  right: 20px;
+
+  width: 220px;
+  padding: 16px;
+
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  pointer-events: auto;
+  animation: dropdownFade 0.15s ease;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

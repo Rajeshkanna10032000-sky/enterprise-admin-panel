@@ -1,0 +1,172 @@
+/* src/styles/forms.css or src/components/forms/forms.css */
+
+/* Common form wrapper */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Labels */
+.form-control label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Text inputs, date picker, select, file uploader */
+.form-control input[type="text"],
+.form-control input[type="date"],
+.form-control select,
+.form-control input[type="file"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control input:focus,
+.form-control select:focus,
+.form-control input[type="date"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Checkbox wrapper */
+.checkbox-control {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-control input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Toggle switch */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-switch label {
+  margin-right: 10px;
+}
+
+.toggle-switch input.toggle-input {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  appearance: none;
+  background: #ccc;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-switch input.toggle-input:checked {
+  background: #007bff;
+}
+
+.toggle-switch input.toggle-input::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-switch input.toggle-input:checked::after {
+  transform: translateX(20px);
+}
+
+/* Button inside forms */
+.form-control button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-control button:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled state */
+.form-control input:disabled,
+.form-control select:disabled,
+.form-control input[type="file"]:disabled,
+.toggle-switch input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Input error styles */
+.input-error {
+  border-color: red;
+}
+
+/* Multi-select looks */
+.form-control select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.file-preview {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.preview-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

@@ -1,0 +1,19 @@
+.header-icon-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.header-icon-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
